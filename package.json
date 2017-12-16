@@ -1,12 +1,15 @@
 {
-  "name": "ember-cli-select2",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-shim-select2",
+  "version": "0.0.1",
+  "description": "ember-cli shim for jquery.select2 library",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Garry Yao",
+    "email": "yaojun85@gmail.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
