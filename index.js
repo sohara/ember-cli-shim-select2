@@ -17,18 +17,8 @@ module.exports = {
     // TODO:
     const pkgPath = path.join(app.bowerDirectory, packageName);
     if (locales) {
-      this.import(
-        {
-          development: `${pkgPath}/select2.css`,
-          production: `${pkgPath}/select2.min.css`
-        }
-      );
-      this.import(
-        {
-          development: `${pkgPath}/select2.js`,
-          production: `${pkgPath}/select2.min.js`
-        }
-      );
+      this.import(`${pkgPath}/select2.css`);
+      this.import(`${pkgPath}/select2.js`);
 
       if (Array.isArray(locales)) {
         locales.forEach(locale => {
