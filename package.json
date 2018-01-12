@@ -14,7 +14,10 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garryyao/ember-cli-shim-select2.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
