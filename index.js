@@ -34,7 +34,7 @@ module.exports = {
       // Filter down the locales to only those are actually exists in the package.
       config.includeLocales = config.includeLocales
       .filter(locale => typeof locale === 'string')
-      .map(locale => locale.replace('.js', '').trim().toLowerCase())
+      .map(locale => locale.replace('.js', '').trim())
       .filter(locale => {
 
         if (!this.checkLocaleExists(locale)) {
