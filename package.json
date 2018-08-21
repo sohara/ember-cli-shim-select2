@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-shim-select2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ember-cli shim for jquery.select2 library",
   "keywords": [
     "ember-addon"
