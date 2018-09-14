@@ -15,7 +15,7 @@ module.exports = {
 
     // Assuming select2 installed as bower dependency
     // TODO:
-    const pkgPath = path.join(app.bowerDirectory, packageName);
+    const pkgPath = path.join(app.project.root, 'node_modules', packageName);
     if (locales) {
       this.import(`${pkgPath}/select2.css`);
       this.import(`${pkgPath}/select2.js`);
@@ -60,7 +60,7 @@ module.exports = {
     return config;
   },
   checkLocaleExists(locale) {
-    const location = path.join(this.app.project.root, `${this.app.bowerDirectory}`, packageName);
+    const location = path.join(this.app.project.root, 'node_modules', packageName);
     return existsSync(path.join(location, `select2_locale_${locale}.js`))
   }
 };
